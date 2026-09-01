@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Grow your social presence with simple, transparent creator packages.">
+  <title>Boostly — Social Growth Studio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="nav">
+    <a class="brand" href="#">BOOST<span>LY</span></a>
+    <nav>
+      <a href="#features">Features</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <a class="nav-btn" href="#pricing">View Plans</a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="glow g1"></div><div class="glow g2"></div>
+      <div class="hero-copy">
+        <div class="pill">✦ Built for creators & brands</div>
+        <h1>Turn your social presence into a <span>growth engine.</span></h1>
+        <p>Simple creator-focused packages, clear pricing and a fast, mobile-first experience. No complicated setup.</p>
+        <div class="hero-actions">
+          <a class="primary" href="#pricing">Explore Packages <b>→</b></a>
+          <a class="secondary" href="#calculator">Try Calculator</a>
+        </div>
+        <div class="proof">
+          <div class="avatars"><i>★</i><i>✦</i><i>●</i><i>+</i></div>
+          <div><strong>10k+</strong><span>creator orders</span></div>
+          <div class="rating"><strong>4.9/5</strong><span>community rating</span></div>
+        </div>
+      </div>
+      <div class="hero-card">
+        <div class="card-top"><span>Creator dashboard</span><b>● Live</b></div>
+        <div class="stat"><span>Profile reach</span><strong>+68.4%</strong></div>
+        <div class="chart">
+          <span style="height:22%"></span><span style="height:35%"></span><span style="height:31%"></span>
+          <span style="height:48%"></span><span style="height:45%"></span><span style="height:66%"></span>
+          <span style="height:58%"></span><span style="height:78%"></span><span style="height:91%"></span>
+        </div>
+        <div class="mini-grid">
+          <div><small>Followers</small><strong>24.8K</strong><em>+12.6%</em></div>
+          <div><small>Engagement</small><strong>8.7%</strong><em>+4.2%</em></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="trust">
+      <span>Designed for modern creators</span><span>⚡ FAST SETUP</span><span>🔒 SECURE CHECKOUT</span><span>✓ CLEAR PRICING</span>
+    </section>
+
+    <section id="features" class="section">
+      <div class="eyebrow">WHY BOOSTLY</div>
+      <h2>Everything you need to <span>level up.</span></h2>
+      <p class="lead">A polished storefront you can customize for your own creator services.</p>
+      <div class="features">
+        <article><div class="icon">⚡</div><h3>Fast experience</h3><p>Lightweight pages built for quick loading on mobile networks.</p></article>
+        <article><div class="icon">◎</div><h3>Simple ordering</h3><p>Let visitors choose a package and contact you in a few clicks.</p></article>
+        <article><div class="icon">⌁</div><h3>Fully responsive</h3><p>Looks clean across phones, tablets and desktop screens.</p></article>
+      </div>
+    </section>
+
+    <section id="calculator" class="calculator section">
+      <div>
+        <div class="eyebrow">QUICK ESTIMATE</div>
+        <h2>Build your <span>package.</span></h2>
+        <p class="lead">Use the calculator to show a personalized estimate. Edit the values in <code>script.js</code>.</p>
+      </div>
+      <div class="calc-box">
+        <label>Service
+          <select id="service">
+            <option value="149">Creator Starter — ₹149</option>
+            <option value="299">Creator Plus — ₹299</option>
+            <option value="499">Creator Pro — ₹499</option>
+          </select>
+        </label>
+        <label>Quantity
+          <input id="qty" type="range" min="1" max="10" value="1">
+          <div class="range-line"><span>1</span><strong id="qtyValue">1</strong><span>10</span></div>
+        </label>
+        <div class="total"><span>Estimated total</span><strong id="total">₹149</strong></div>
+        <a class="primary full" href="#pricing">Choose a plan →</a>
+      </div>
+    </section>
+
+    <section id="pricing" class="section">
+      <div class="eyebrow">PRICING</div>
+      <h2>Pick what fits <span>your goal.</span></h2>
+      <p class="lead">Transparent starter packages. Replace these with your actual services and terms.</p>
+      <div class="pricing">
+        <article class="price-card"><h3>Starter</h3><p>For getting started</p><div class="price">₹149 <small>/ pack</small></div><ul><li>Simple ordering</li><li>Mobile-first delivery</li><li>Basic support</li></ul><button onclick="openOrder('Starter',149)">Get Starter</button></article>
+        <article class="price-card popular"><div class="popular-tag">MOST POPULAR</div><h3>Plus</h3><p>For active creators</p><div class="price">₹299 <small>/ pack</small></div><ul><li>Priority processing</li><li>Creator dashboard style</li><li>Priority support</li></ul><button onclick="openOrder('Plus',299)">Get Plus</button></article>
+        <article class="price-card"><h3>Pro</h3><p>For growing pages</p><div class="price">₹499 <small>/ pack</small></div><ul><li>Advanced package</li><li>Priority support</li><li>Custom assistance</li></ul><button onclick="openOrder('Pro',499)">Get Pro</button></article>
+      </div>
+    </section>
+
+    <section class="testimonial section">
+      <div class="quote">“The site feels premium, loads fast and makes the offer easy to understand.”</div>
+      <div class="person"><div class="person-avatar">A</div><div><strong>Creator community</strong><span>Sample testimonial</span></div></div>
+    </section>
+
+    <section id="faq" class="section faq">
+      <div class="eyebrow">FAQ</div>
+      <h2>Questions, <span>answered.</span></h2>
+      <details><summary>Can I change the brand name and colors?</summary><p>Yes. Change the brand text in index.html and the CSS variables at the top of style.css.</p></details>
+      <details><summary>Can I add Razorpay or another payment gateway?</summary><p>Yes, but real payments should be connected through the gateway's official integration and a secure server-side flow. Do not put secret API keys in this static frontend.</p></details>
+      <details><summary>Can this be hosted for free?</summary><p>Yes. This static version can be deployed on Cloudflare Pages. A custom domain and payment/backend services may have separate costs.</p></details>
+    </section>
+  </main>
+
+  <footer><div class="brand">BOOST<span>LY</span></div><p>© 2026 Boostly. Demo storefront template.</p><div><a href="#">Privacy</a><a href="#">Terms</a></div></footer>
+
+  <div id="modal" class="modal" aria-hidden="true">
+    <div class="modal-box">
+      <button class="close" onclick="closeOrder()">×</button>
+      <div class="eyebrow">ORDER REQUEST</div>
+      <h2 id="orderTitle">Starter</h2>
+      <p id="orderPrice"></p>
+      <form onsubmit="submitOrder(event)">
+        <input id="name" required placeholder="Your name">
+        <input id="contact" required placeholder="Instagram username or WhatsApp">
+        <button class="primary full">Send request</button>
+      </form>
+      <p class="fine">Demo form only — connect this to your preferred backend or WhatsApp flow.</p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
